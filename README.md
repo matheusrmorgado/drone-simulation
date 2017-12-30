@@ -116,7 +116,7 @@ Para estudar com mais detalhes a influência da escolha de um sistema de control
 
 * Quadcopter Simulation and Control Made Easy: https://www.mathworks.com/videos/quadcopter-simulation-and-control-made-easy-93365.html
 
-* DJI F450 User Manual: https://www.dji.com/flame-wheel-arf/download
+* DJI™ F450 User Manual: https://www.dji.com/flame-wheel-arf/download
 
 ## Direitos autorais
 
