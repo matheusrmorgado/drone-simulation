@@ -60,8 +60,55 @@ Como dito anteriormente, as saídas do bloco *Controller* são as velocidades do
 
 ## Resultados obtidos na simulação
 
+Ao executar a simulação do modelo estudado é possível visualizar em 3D o drone voando tendo como referência de voo os sinais atribuídos no bloco *Signal Builder*. Para facilitar o entendimento do comportamento do drone foi gravado o resultado de uma das simulações e disponibilizado no arquivo [drone-simulation.mp4](https://github.com/matheusrmorgado/Drone-Simulation/blob/master/drone-simulation.mp4).
 
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/QuadrotorMechanicsView.PNG">
+</p>
 
+### Simulation Data Inspector
+
+Após analisar visualmente o comportamento de voo do drone, foi realizada uma análise mais aprofundada do grau de determinismo do drone. Para isso, foi utilizada a ferramenta do Simulink denominada Simulation Data Inspector.
+
+A partir dessa ferramenta, foi possível observar os diferentes sinais do motor do drone gerados pela simulação e então comparar com os sinais de referência. A partir dos logs analisados desses sinais foram obtidos gráficos para realizar a comparação e o cálculo de erro.
+
+#### Posição X e Y
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/XY.png">
+</p>
+
+#### Gaz
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Gaz.png">
+</p>
+
+#### Pitch
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Pitch.png">
+</p>
+
+#### Roll
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Roll.png">
+</p>
+
+#### Yaw
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Yaw.png">
+</p>
+
+### Influência do modelo de controle
+
+Para estudar com mais detalhes o impacto do sistema de controle do tipo PID no voo do drone, foi realizada uma comparação com uma simulação utilizando o controle do tipo P. O resultado obtido foi um erro maior e um sinal mais distorcido. Dessa forma, observa-se que o controle do tipo PID é uma boa solução na implementação da modelagem de um drone.
+
+<p align="center">
+  <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/RollControllers.png">
+</p>
 
 ## Referências
 
