@@ -1,4 +1,4 @@
-% Drone Simulation Analysys based on the project from Khanh Dang
+% Drone Simulation Analysis based on the project from Khanh Dang
 
 % Requires: Simscape Multibody, Simulink, MATLAB
 
