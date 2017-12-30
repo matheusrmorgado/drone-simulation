@@ -1,4 +1,4 @@
-# Modelagem e simulação de um drone
+# Modelagem e simulação de drone
 
 ## Descrição do estudo
 
@@ -24,7 +24,7 @@ O modelo completo de simulação do drone pode ser descrito no diagrama de bloco
 
 #### Signal Builder
 
-O módulo *Signal Builder* é responsável por configurar os sinais de entrada da malha de controle referentes à altura de voo do drone e os ângulos de pitch, roll e yaw.
+O módulo *Signal Builder* é responsável por configurar os sinais de entrada da malha de controle referentes à altura de voo do drone e os ângulos de *pitch*, *roll* e *yaw*.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Inputs.PNG">
@@ -52,13 +52,11 @@ Para ajustar esse controle foram utilizados 4 blocos PID, um para cada sinal de 
 
 #### Quadrotor 3D Model
 
-Como dito anteriormente, as saídas do bloco *Controller* são as velocidades dos 4 motores do drone. A partir dessas velocidades são definidos 6 variáveis: X, Y, Gaz, Roll, Pitch e Yaw.
+Como dito anteriormente, as saídas do bloco *Controller* são as velocidades dos 4 motores do drone. A partir dessas velocidades são definidos 6 variáveis: *X*, *Y*, *Gaz*, *Roll*, *Pitch* e *Yaw*. Todas essas variáveis são responsáveis por determinar o voo do drone durante a simulação, além de servir como parâmetro para cálculo de erro em relação ao sinal de referência, caracterizando assim um sistema de controle de malha fechada.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Quadrotor3DModel.PNG">
 </p>
-
-Todas essas variáveis são responsáveis por determinar o voo do drone durante a simulação, além de servir como parâmetro para cálculo de erro em relação ao sinal de referência, caracterizando assim um sistema de controle de malha fechada.
 
 ## Resultados obtidos na simulação
 
