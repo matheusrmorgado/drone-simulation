@@ -104,7 +104,7 @@ A partir dessa ferramenta, foi possível observar os diferentes sinais do motor 
 
 ### Influência do modelo de controle
 
-Para estudar com mais detalhes o impacto do sistema de controle do tipo PID no voo do drone, foi realizada uma comparação com uma simulação utilizando o controle do tipo P. O resultado obtido foi um erro maior e um sinal mais distorcido. Dessa forma, observa-se que o controle do tipo PID é uma boa solução na implementação da modelagem de um drone.
+Para estudar com mais detalhes a influência da escolha de um sistema de controle do tipo PID no voo de um drone, foi realizada uma comparação com uma simulação utilizando o controle do tipo P. O resultado obtido foi um erro maior e um sinal mais distorcido. Dessa forma, observa-se que o controle do tipo PID é uma boa solução na implementação da modelagem de um drone.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/RollControllers.png">
