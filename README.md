@@ -70,7 +70,7 @@ Ao executar a simulação do modelo estudado é possível visualizar em 3D o dro
 
 Após analisar visualmente o comportamento de voo do drone, foi realizada uma análise mais aprofundada do grau de determinismo do drone. Para isso, foi utilizada a ferramenta do Simulink denominada Simulation Data Inspector.
 
-A partir dessa ferramenta, foi possível observar os diferentes sinais do motor do drone gerados pela simulação e então comparar com os sinais de referência. A partir dos logs analisados desses sinais foram obtidos gráficos para realizar a comparação e o cálculo de erro.
+A partir dessa ferramenta, foi possível observar os diferentes sinais do motor do drone gerados pela simulação e então comparar com os sinais de referência. A partir dos logs analisados desses sinais foram gerados gráficos para realizar a comparação e o cálculo de erro entre sinais.
 
 #### Posição X e Y
 
