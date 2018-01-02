@@ -16,7 +16,7 @@ O modelo de sistema dinâmico estudado considera os seis graus de liberdade em *
 
 ### Diagrama de blocos
 
-O modelo completo de simulação do drone pode ser descrito no diagrama de blocos abaixo. A implementação desse modelo foi realizada por meio da ferramenta Simulink do Matlab. Nessa modelagem considera-se 3 grandes blocos: *Signal Builder*, *Controller* e *Quadrotor 3D Model*.
+A modelagem completa do sistema dinâmico do drone está disponível no arquivo **Assembly_Quadrotor.slx**. Nesse arquivo encontrasse a implementação do modelo por meio da utilização de diagramas de blocos. O diagrama abaixo representa uma visão geral do drone completo, integrando a parte de controle e o comportamento físico das peças que constituem o quadrotor. A seguir será descrito com mais detalhes os 3 principais blocos: *Signal Builder*, *Controller* e *Quadrotor 3D Model*.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/AssemblyQuadrotor.PNG">
