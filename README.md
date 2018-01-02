@@ -16,15 +16,15 @@ O modelo de sistema dinâmico estudado considera os seis graus de liberdade em *
 
 ### Diagrama de blocos
 
-A modelagem completa do sistema dinâmico do drone está disponível no arquivo **Assembly_Quadrotor.slx**. Nesse arquivo encontrasse a implementação do modelo por meio da utilização de diagramas de blocos. O diagrama abaixo representa uma visão geral do drone completo, integrando a parte de controle e o comportamento físico das peças que constituem o quadrotor. A seguir será descrito com mais detalhes os 3 principais blocos: *Signal Builder*, *Controller* e *Quadrotor 3D Model*.
+A modelagem completa do sistema dinâmico do drone está disponível no arquivo **Assembly_Quadrotor.slx**. Nesse arquivo encontrasse a implementação do modelo por meio da utilização de diagramas de blocos. O diagrama abaixo representa uma visão geral do drone completo, integrando a parte de controle e o comportamento físico das peças que constituem o quadrotor. A seguir será descrito com mais detalhes os 3 principais blocos: *Inputs*, *Controller* e *Quadrotor 3D Model*.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/AssemblyQuadrotor.PNG">
 </p>
 
-#### Signal Builder
+#### Inputs
 
-O módulo *Signal Builder* é responsável por configurar os sinais de entrada da malha de controle referentes à altura de voo do drone e os ângulos de *pitch*, *roll* e *yaw*.
+O módulo *Inputs* é responsável por configurar os sinais de entrada da malha de controle referentes à altura de voo do drone e os ângulos de *pitch*, *roll* e *yaw*.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Inputs.PNG">
@@ -38,7 +38,7 @@ A partir da definição dos sinais utilizados como referência para voo do drone
 
 #### Controller
 
-O módulo *Controller* tem como entradas a velocidade máxima do drone e o erro representado pela diferença entre os sinais de referência definidos no módulo *Signal Builder* e os sinais obtidos pela simulação, enquanto que as saídas são as velocidades de cada um dos 4 motores do drone.
+O módulo *Controller* tem como entradas a velocidade máxima do drone e o erro representado pela diferença entre os sinais de referência definidos no módulo *Inputs* e os sinais obtidos pela simulação, enquanto que as saídas são as velocidades de cada um dos 4 motores do drone.
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/Controller.PNG">
@@ -60,7 +60,7 @@ Como dito anteriormente, as saídas do bloco *Controller* são as velocidades do
 
 ## Resultados obtidos na simulação
 
-Ao executar a simulação do modelo estudado é possível visualizar em 3D o drone voando tendo como referência de voo os sinais atribuídos no bloco *Signal Builder*. Para facilitar o entendimento do comportamento do drone foi gravado o resultado de uma das simulações e disponibilizado no arquivo [drone-simulation.mp4](https://github.com/matheusrmorgado/Drone-Simulation/blob/master/drone-simulation.mp4).
+Ao executar a simulação do modelo estudado é possível visualizar em 3D o drone voando tendo como referência de voo os sinais atribuídos no bloco *Inputs*. Para facilitar o entendimento do comportamento do drone foi gravado o resultado de uma das simulações e disponibilizado no arquivo [drone-simulation.mp4](https://github.com/matheusrmorgado/Drone-Simulation/blob/master/drone-simulation.mp4).
 
 <p align="center">
   <img src="https://github.com/matheusrmorgado/Drone-Simulation/blob/master/images/QuadrotorMechanicsView.PNG">
